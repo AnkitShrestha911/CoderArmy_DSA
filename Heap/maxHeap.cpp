@@ -15,6 +15,9 @@ public:
         this->total_size = size;
     }
 
+    //Time: ONLognN
+    // insert func takes logN time but when we call this function with n element to insert then it 
+    // become nlogn
     void insert(int data) {
         if (size == total_size) {
             cout << "OverFlow\n";
@@ -52,6 +55,8 @@ public:
         }
     }
 
+
+    //Time: LogN
     void deleteHeap() {
         // coderarmy tutorial code
         if (size == 0) {
